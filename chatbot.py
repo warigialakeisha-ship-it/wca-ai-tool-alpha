@@ -16,3 +16,6 @@ Always respond with raw JSON only, with keys 'subject' and 'body'. No markdown, 
 
 #memory (conversation history)
 messages = []
+
+print("AI Email Writer Ready!")
+print("Type 'quit' to exit.\n")
