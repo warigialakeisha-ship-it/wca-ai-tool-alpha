@@ -33,3 +33,11 @@ while True:
    
     #Add user in    put to messages to conversation history
     messages.append({"role": "user", "content": user_input})
+    
+    #Generate response from the model
+    response = client.messages.create(
+        model="claude-haiku-4-5-20251001",
+        system=SYSTEM_PROMPT,
+        messages=messages,
+        max_tokens=200,
+    )
