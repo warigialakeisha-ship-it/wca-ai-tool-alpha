@@ -27,3 +27,6 @@ while True:
     task        = input("Task: ")
     context     = input("Context: ")
     constraints = input("Constraints: ")
+
+    # Format all inputs into one structured prompt for Claude
+    user_input = f"Role: {role}. Task: {task}. Context: {context}. Constraints: {constraints}."
