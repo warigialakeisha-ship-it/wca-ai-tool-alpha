@@ -47,3 +47,6 @@ while True:
     
     #Add assistant reply to memory
     messages.append({"role": "assistant", "content": reply})
+
+    # Parse the JSON response from Claude
+    data = json.loads(reply)
