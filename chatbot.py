@@ -50,3 +50,7 @@ while True:
 
     # Parse the JSON response from Claude
     data = json.loads(reply)
+
+    # Display the generated email
+    print(f"\nSubject: {data['subject']}")
+    print(f"Body: {data['body']}\n"
