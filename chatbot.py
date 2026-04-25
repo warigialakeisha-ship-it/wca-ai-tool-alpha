@@ -9,12 +9,6 @@ load_dotenv()
 
 #Initialize client(model)
 client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
-<<<<<<< Updated upstream
-=======
-
-
-
->>>>>>> Stashed changes
 
 # lock claude to email writing only
 SYSTEM_PROMPT = """You are an email writer. ONLY write emails.
