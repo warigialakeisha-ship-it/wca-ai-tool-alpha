@@ -43,7 +43,7 @@ while True:
     )
     
     #claude response
-    reply = response.content[0].text.strip().replace("json", "").replace("", "").strip()
+    reply = response.content[0].text.strip().replace("```json", "").replace("```", "").strip()
     
     #Add assistant reply to memory
     messages.append({"role": "assistant", "content": reply})
