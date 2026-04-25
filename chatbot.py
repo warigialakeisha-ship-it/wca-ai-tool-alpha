@@ -30,3 +30,6 @@ while True:
 
     # Format all inputs into one structured prompt for Claude
     user_input = f"Role: {role}. Task: {task}. Context: {context}. Constraints: {constraints}."
+   
+    #Add user in    put to messages to conversation history
+    messages.append({"role": "user", "content": user_input})
