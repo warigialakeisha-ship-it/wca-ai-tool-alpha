@@ -41,3 +41,6 @@ while True:
         messages=messages,
         max_tokens=200,
     )
+    
+    #claude response
+    reply = response.content[0].text.strip().replace("json", "").replace("", "").strip()
