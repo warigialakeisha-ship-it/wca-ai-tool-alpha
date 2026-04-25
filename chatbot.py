@@ -19,3 +19,8 @@ messages = []
 
 print("AI Email Writer Ready!")
 print("Type 'quit' to exit.\n")
+
+while True:
+    # Collect R-T-C-C-O inputs from the user
+    role        = input("Your Role: ")
+    if role.lower() == "quit": break  # Exit the loop if user types quit
